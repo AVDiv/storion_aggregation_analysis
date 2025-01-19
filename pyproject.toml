@@ -7,6 +7,16 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+ipykernel = "^6.29.5"
+deltalake = "^0.24.0"
+pandas = "^2.2.3"
+bson = "^0.5.10"
+nltk = "^3.9.1"
+tqdm = "^4.67.1"
+chromadb = "^0.6.3"
+numpy = "^2.2.2"
+scikit-learn = "^1.6.1"
+yake = "^0.4.8"
 
 
 [build-system]
