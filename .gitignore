@@ -1,0 +1,19 @@
+# Virtual Enviroments
+.venv/
+venv/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+!.env.template
+
+# Experimental data
+data/
+*.zip
+
+# Generate files/folders
+## By python
+__pycache__/
+## By other modules
+chroma/
