@@ -12,8 +12,8 @@ class Database:
     def insert_document(self, document):
         self.collection.insert(document)
 
-    def insert_document_by_embedding(self, id, embeddings, document):
-        self.collection.add(ids=id, embeddings=embeddings, documents=document)
+    def insert_document_by_embedding(self, id, embeddings, document, metadata=None):
+        self.collection.add(ids=id, embeddings=embeddings, documents=document, metadatas=metadata)
 
     def get_document(self, document_id):
         return self.collection.get(document_id, include=["documents", "embeddings"])
@@ -22,7 +22,7 @@ class Database:
         return self.collection.query(
             embeddings,
             n_results=n,
-            include=["documents", "embeddings", "distances"],
+            include=["documents", "embeddings", "distances", "metadatas"],
         )
 
     def delete_document(self, document_id):
