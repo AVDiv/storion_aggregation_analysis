@@ -19,3 +19,7 @@ data/
 __pycache__/
 ## By other modules
 chroma/
+
+# Other notes files
+*.md
+!README.md
