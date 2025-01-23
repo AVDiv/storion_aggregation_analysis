@@ -21,6 +21,7 @@ pytextrank = "^3.3.0"
 keybert = "^0.8.5"
 plotly = "^5.24.1"
 nbformat = "^5.10.4"
+datasketch = "^1.6.5"
 
 
 [build-system]
