@@ -23,3 +23,4 @@ chroma/
 # Other notes files
 *.md
 !README.md
+!PROBLEM.md
