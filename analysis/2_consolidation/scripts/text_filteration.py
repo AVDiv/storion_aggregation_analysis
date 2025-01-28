@@ -66,7 +66,7 @@ class FaissDB:
         del self.index
         self.index = faiss.IndexFlatL2(self.dimension)
         self.embedding_documents = []
-        print("FAISS database deleted.")
+        # print("FAISS database deleted.")
 
 def calculate_pairwise_similarity(embeddings):
     """
