@@ -1,32 +1,40 @@
-[tool.poetry]
+[project]
 name = "storion-aggregation-analysis"
 version = "0.1.0"
 description = ""
-authors = ["Avin Divakara <67309607+AVDiv@users.noreply.github.com>"]
+authors = [
+  { name = "Avin Divakara", email = "67309607+AVDiv@users.noreply.github.com" }
+]
+requires-python = ">=3.12,<3.13"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = ">=3.12,<3.13"
-ipykernel = "^6.29.5"
-deltalake = "^0.24.0"
-pandas = "^2.2.3"
-bson = "^0.5.10"
-nltk = "^3.9.1"
-tqdm = "^4.67.1"
-chromadb = "^0.6.3"
-numpy = "^2.2.2"
-scikit-learn = "^1.6.1"
-yake = "^0.4.8"
-pytextrank = "^3.3.0"
-keybert = "^0.8.5"
-plotly = "^5.24.1"
-nbformat = "^5.10.4"
-datasketch = "^1.6.5"
-faiss-cpu = "^1.9.0.post1"
-sentence-transformers = "^3.4.0"
-spacy = "^3.8.4"
-
+dependencies = [
+  "ipykernel>=6.29.5",
+  "deltalake>=0.24.0",
+  "pandas>=2.2.3",
+  "bson>=0.5.9",
+  "nltk>=3.9.1",
+  "tqdm>=4.67.1",
+  "chromadb>=0.6.3",
+  "numpy>=2.2.2",
+  "scikit-learn>=1.6.1",
+  "yake>=0.4.8",
+  "pytextrank>=3.3.0",
+  "keybert>=0.8.5",
+  "plotly>=5.24.1",
+  "nbformat>=5.10.4",
+  "datasketch>=1.6.5",
+  "faiss-cpu>=1.9.0.post1",
+  "sentence-transformers>=3.4.0",
+  "spacy>=3.8.4",
+  "memory-profiler",
+  "tabulate",
+  "colorama",
+]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[[tool.uv.index]]
+url = "https://test.pypi.org/simple"
+default = true
