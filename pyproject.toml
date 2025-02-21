@@ -6,7 +6,7 @@ authors = ["Avin Divakara <67309607+AVDiv@users.noreply.github.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = ">=3.12,<3.13"
 ipykernel = "^6.29.5"
 deltalake = "^0.24.0"
 pandas = "^2.2.3"
@@ -24,6 +24,7 @@ nbformat = "^5.10.4"
 datasketch = "^1.6.5"
 faiss-cpu = "^1.9.0.post1"
 sentence-transformers = "^3.4.0"
+spacy = "^3.8.4"
 
 
 [build-system]
